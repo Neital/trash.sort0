@@ -1,12 +1,104 @@
-p {
-    font-family:Verdana;
-    font-size: x-large;
-    color: olivedrab;
+
+body{
+
+    display: flex;
+    margin: 0 auto;
+    height: 100vh;
+    width:auto;
+    background-color: #B4C7B4;
+    padding: 3%;
+    min-width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
 }
 
-a{
+.square{
+    display: inline-block;
 
-    font-family: Verdana;
-    color: olivedrab;
+    background-color: #96B49B ;
+    width: 600px;
+    height: 800px;
 
 }
+
+.square1{
+    display: inline-block;
+    background-color: #5C540C ;
+    width: 600px;
+    height: 800px;
+
+}
+
+.square3{
+    display: inline-block;
+    background-color: #56734C ;
+    width: 1204px;
+    height: 200px;
+}
+
+.square4{
+    background-color: #5A5F5B ;
+    width: 600px;
+    height: 600px;
+}
+
+.tekst {
+    position: absolute;
+    padding-left: 10px;
+}
+
+.hele_tekst{
+    font-family:'Times New Roman', Times, serif ;
+    font-size: 120px;
+    color: #56734C;
+    margin: 0 0 -19px 0; 
+
+}
+
+.tume_tekst{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120px;
+    color: #5C540C;
+    margin: 0 0 -10px 0;
+}
+
+.nupud {
+    position: relative;
+    display: flex;
+    flex-direction:row;
+    align-items: flex-start;
+
+}
+
+
+.nupp{
+
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    height: 80px;
+    width: 220px;
+    margin: 10px;
+    text-align: center;
+}
+#olme {
+    background-color: #797474;
+}
+#bio {
+    background-color: #826C21;
+}
+#klaas {
+    background-color: #57975E; 
+}
+#plast {
+    background-color: #F1E46F;
+}
+#papp {
+    background-color: #347F97;
+}
+
