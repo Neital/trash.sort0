@@ -1,9 +1,23 @@
-var responsiveSlider = function() {
-    var slides = document.querySelectorAll(".slide")
-    var dots = document.querySelectorAll(".dot")
-    var index = 0
-    var prev = document.getElementById("left-arrow")
-    var next = document.getElementById("right-arrow")
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+
+let responsiveSlider = function() {
+    let slides = document.querySelectorAll(".slide")
+    let dots = document.querySelectorAll(".dot")
+    let index = 0
+    let prev = document.getElementById("left-arrow")
+    let next = document.getElementById("right-arrow")
     let timerId = setTimeout(function() {nextSlide()}, 5000)
     function resetTimer() {
       clearTimeout(timerId)
@@ -42,3 +56,16 @@ var responsiveSlider = function() {
     window.onload = function() {
     responsiveSlider()
   }
+
+  var header = document.getElementById("mySide-box");
+  var sticky = header.offsetTop;
+
+  function stickyScroll() {
+  if (window.scrollY > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+window.onscroll = function() {stickyScroll()};
