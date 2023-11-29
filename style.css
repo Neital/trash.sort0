@@ -14,7 +14,6 @@ body{
 
 .square{
     display: inline-block;
-
     background-color: #96B49B ;
     width: 600px;
     height: 800px;
@@ -37,7 +36,51 @@ body{
 }
 
 .square4{
+    display: inline-block;
     background-color: #5A5F5B ;
+    width: 600px;
+    height: 600px;
+}
+
+.square2{
+    display: inline-block;
+    background-color: #B4C7B4;
+    width: 600px;
+    height: 600px;
+}
+
+
+.square6{
+    display: inline-block;
+    background-color: #664F36;
+    width: 600px;
+    height: 600px;
+}
+
+.square5{
+    display: inline-block;
+    background-color: #009551;
+    width: 600px;
+    height: 600px;
+}
+
+.square7{
+    display: inline-block;
+    background-color: #FFF050;
+    width: 600px;
+    height: 600px;
+}
+
+.square8{
+    display: inline-block;
+    background-color: #1FBFEE;
+    width: 600px;
+    height: 600px;
+}
+
+.square9{
+    display: inline-block;
+    background-color: #00A1D5;
     width: 600px;
     height: 600px;
 }
