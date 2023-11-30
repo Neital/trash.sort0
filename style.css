@@ -25,7 +25,7 @@ body{
     background-color: #5C540C ;
     width: 600px;
     height: 800px;
-
+    vertical-align: top;
 }
 
 .square3{
@@ -85,9 +85,29 @@ body{
     height: 600px;
 }
 
+.pilt{
+    padding: 10px;
+    width: auto;
+    height: auto;
+    position: relative;
+    margin-top: 40%;
+    margin-left: 16.5%;
+    height: 530px;
+    width: 380px;
+}
+
+.pilt1{
+    padding: 10px;
+    position: relative;
+    margin-bottom: 8%;
+    margin-left: 16.5%;
+    height: 530px;
+    width: 380px;
+}
+
 .tekst {
     position: absolute;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .hele_tekst{
