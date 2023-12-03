@@ -1,0 +1,120 @@
+body{
+
+    display:flexbox;
+    margin: 0 ;
+    height: 100vh;
+    width: 70vh;
+    padding: 2%;
+    min-width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden; 
+}
+
+.kastid{
+
+    display: inline-block;
+    width: 680px;
+    height: 450px;
+    margin: 8px;
+    margin-top: 3%;
+    border-radius: 7%;
+}
+
+.pealkiri{
+    font-size: 360%;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 0 -15px 0; 
+    padding-left: 42%;
+}
+
+.tekst{
+    font-size: 120%;
+    padding-left: 3%;
+}
+
+.pealkiri1{
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 800%;
+    margin-top: 0px;
+    font-style: normal;
+}
+
+.tekst1{
+
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin-top: 0%;
+}
+
+#rida1{
+    margin-top: -120px;
+}
+
+#rida2{
+    margin-top: -20px;
+}
+
+
+
+#olme{
+    background-color: #B6B6B6 ;
+}
+
+#bio{
+    background-color: #8A805D;
+}
+
+#klaas{
+    background-color: #82C39C;
+}
+
+#plast{
+    background-color: #F9E749
+}
+
+#papp{
+    background-color: #2D94CE;
+}
+
+#olmekast{
+    background-color: #D0D0D0;
+}
+
+#biokast{
+    background-color: #E4DFCE
+}
+
+#klaaskast{
+    background-color: #BCF0D1;
+}
+
+#plastkast{
+    background-color: #FFF59D;
+}
+
+#pappkast{
+    background-color: #A3D6F3;
+}
+
+#olmetekst{
+    color: #626262;
+}
+
+#biotekst{
+    color: #554714;
+}
+
+#klaastekst{
+    color: #00421A;
+}
+
+#plasttekst{
+    color: #4F4704;
+}
+
+#papptekst{
+    color: #06334D;
+}

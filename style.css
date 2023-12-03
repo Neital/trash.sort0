@@ -33,6 +33,7 @@ body{
     background-color: #56734C ;
     width: 1204px;
     height: 200px;
+    margin-bottom: 4px;
 }
 
 .square4{
@@ -40,6 +41,7 @@ body{
     background-color: #5A5F5B ;
     width: 600px;
     height: 600px;
+    vertical-align: top;
 }
 
 .square2{
@@ -55,6 +57,7 @@ body{
     background-color: #664F36;
     width: 600px;
     height: 600px;
+    vertical-align: top;
 }
 
 .square5{
@@ -62,6 +65,7 @@ body{
     background-color: #009551;
     width: 600px;
     height: 600px;
+    vertical-align: top;
 }
 
 .square7{
@@ -69,6 +73,7 @@ body{
     background-color: #FFF050;
     width: 600px;
     height: 600px;
+    vertical-align: top;
 }
 
 .square8{
@@ -76,6 +81,7 @@ body{
     background-color: #1FBFEE;
     width: 600px;
     height: 600px;
+    vertical-align: top;
 }
 
 .square9{
@@ -83,6 +89,7 @@ body{
     background-color: #00A1D5;
     width: 600px;
     height: 600px;
+    vertical-align: top;
 }
 
 .pilt{
@@ -165,3 +172,33 @@ body{
     background-color: #347F97;
 }
 
+
+#tekstike{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200%;
+    text-align: justify;
+    padding: 5%;
+    margin-top: -5%;
+
+}
+
+#pealkirjake{
+    padding-left: 5%;
+    font-size: 380%;
+    
+}
+
+#pealkirjake1{
+    font-size: 300%;
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 1.5%;
+    margin-top: 5px;
+}
+
+#tekstike1{
+    padding-left: 1.5%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 175%;
+    
+    
+}
