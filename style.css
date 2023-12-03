@@ -1,15 +1,27 @@
 
 body{
+    background-image: url("trash-bg.png");
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
 
-    display: flex;
-    margin: 0 auto;
-    height: 100vh;
-    width:auto;
+.kõik {
     background-color: #B4C7B4;
-    padding: 3%;
-    min-width: 100%;
-    min-height: 100%;
-    overflow-x: hidden;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    max-width: 80%;
+    min-width: 700px;
+}
+
+.squares {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
 }
 
 .square{
@@ -17,10 +29,10 @@ body{
     background-color: #96B49B ;
     width: 600px;
     height: 800px;
-
+    position: relative;
 }
 
-.square1{
+#square1{
     display: inline-block;
     background-color: #5C540C ;
     width: 600px;
@@ -28,15 +40,14 @@ body{
     vertical-align: top;
 }
 
-.square3{
+#square3{
     display: inline-block;
     background-color: #56734C ;
     width: 1204px;
     height: 200px;
-    margin-bottom: 4px;
 }
 
-.square4{
+#square4{
     display: inline-block;
     background-color: #5A5F5B ;
     width: 600px;
@@ -44,7 +55,7 @@ body{
     vertical-align: top;
 }
 
-.square2{
+#kast{
     display: inline-block;
     background-color: #B4C7B4;
     width: 600px;
@@ -52,7 +63,7 @@ body{
 }
 
 
-.square6{
+#square6{
     display: inline-block;
     background-color: #664F36;
     width: 600px;
@@ -60,7 +71,7 @@ body{
     vertical-align: top;
 }
 
-.square5{
+#square5{
     display: inline-block;
     background-color: #009551;
     width: 600px;
@@ -68,7 +79,7 @@ body{
     vertical-align: top;
 }
 
-.square7{
+#square7{
     display: inline-block;
     background-color: #FFF050;
     width: 600px;
@@ -76,7 +87,7 @@ body{
     vertical-align: top;
 }
 
-.square8{
+#square8{
     display: inline-block;
     background-color: #1FBFEE;
     width: 600px;
@@ -84,7 +95,7 @@ body{
     vertical-align: top;
 }
 
-.square9{
+#square9{
     display: inline-block;
     background-color: #00A1D5;
     width: 600px;
@@ -114,14 +125,14 @@ body{
 
 .tekst {
     position: absolute;
-    padding-left: 20px;
 }
 
 .hele_tekst{
     font-family:'Times New Roman', Times, serif ;
     font-size: 120px;
     color: #56734C;
-    margin: 0 0 -19px 0; 
+    margin: 0 0 -19px 0;
+    padding-left: 5%;
 
 }
 
@@ -130,29 +141,26 @@ body{
     font-size: 120px;
     color: #5C540C;
     margin: 0 0 -10px 0;
+    padding-left: 5%;
 }
 
 .nupud {
     position: relative;
-    display: flex;
-    flex-direction:row;
-    align-items: flex-start;
-
+    margin: auto;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 
 .nupp{
-
     border: none;
     color: black;
     padding: 15px 32px;
     text-decoration: none;
-    display: inline-block;
+    display: inline-flex;
     font-size: 28px;
     font-family: 'Times New Roman', Times, serif;
     position: relative;
-    height: 80px;
-    width: 220px;
     margin: 10px;
     text-align: center;
 }
@@ -174,18 +182,16 @@ body{
 
 
 #tekstike{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 200%;
+    font-size: 160%;
     text-align: justify;
     padding: 5%;
     margin-top: -5%;
-
+    font-family: math;
 }
 
 #pealkirjake{
     padding-left: 5%;
-    font-size: 380%;
-    
+    font-size: 360%;
 }
 
 #pealkirjake1{
@@ -197,8 +203,6 @@ body{
 
 #tekstike1{
     padding-left: 1.5%;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 175%;
-    
-    
+    font-family: math;
 }

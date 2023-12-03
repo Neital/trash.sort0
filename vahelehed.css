@@ -1,6 +1,6 @@
 body{
 
-    display:flexbox;
+    display: inline-table;
     margin: 0 ;
     height: 100vh;
     width: 70vh;
@@ -10,12 +10,11 @@ body{
     overflow-x: hidden;
     overflow-y: hidden; 
 }
-
 .kastid{
 
     display: inline-block;
     width: 680px;
-    height: 450px;
+    max-height: 550px;
     margin: 8px;
     margin-top: 3%;
     border-radius: 7%;
