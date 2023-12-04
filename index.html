@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="ee">
+<html lang="et">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>trash.sort()</title>
@@ -9,11 +9,11 @@
 <body>
     <div class="kõik">
         <div class="nupud">
-            <a href="olmeprügi.html" class="nupp" id="olme">Olmeprügi</a>
-            <a href="Biojäätmed.html" class="nupp" id="bio">Biojäätmed</a>
-            <a href="klaaspakend.html" class="nupp" id="klaas">Klaaspakend</a>
-            <a href="plastmetall.html" class="nupp" id="plast">Plast- ja metallpakend</a>
-            <a href="papppaber.html" class="nupp" id="papp">Papp- ja paberpakend</a>
+            <a href="html/olmeprügi.html" class="nupp" id="olme">Olmeprügi</a>
+            <a href="html/Biojäätmed.html" class="nupp" id="bio">Biojäätmed</a>
+            <a href="html/klaaspakend.html" class="nupp" id="klaas">Klaaspakend</a>
+            <a href="html/plastmetall.html" class="nupp" id="plast">Plast- ja metallpakend</a>
+            <a href="html/papppaber.html" class="nupp" id="papp">Papp- ja paberpakend</a>
         </div>
         <div class="squares">
             <div class="square">
@@ -24,67 +24,77 @@
               </div>
           </div>
          <div class="square" id="square1">
-             <img class="pilt" src="Prügikast.png">
+            <a href="html/quiz1.html" id="quiz"></a>
           </div>
           <div class="square" id="square3">
              <p id="pealkirjake1">Kas teadsid?</p>
              <p id="tekstike1"> Aastast 2024 on biojäätmete kogumine kohustuslik - see aitab säilitada nii keskkonda kui ka ressursse.</p>
           </div>
-          <div style="color: #252525;" class="square" id="square4">
-             <p id="pealkirjake">Olmejäätmed</p>
-             <p id="tekstike">Segaolmejäätmete alla kuuluvad kõik jäätmed, mida eraldi liigitatuna ei koguta. Näitena võib tuua mähkmed, hügieenisidemed, tampoonid, määrdunud pakendid, kassiliiv, tänavapühkmed, tuhk, katkised mänguasjad, rõivad, jalanõud jne.</p>
+          <div id="slider">
+            <script src="js/slider.js"></script>
+            <div class="slide">
+                <img src="img/slider/slide1.png" alt="">
+              </div>
+              <div class="slide">
+                 <img src="img/slider/slide2.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="img/slider/slide3.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="img/slider/slide4.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="img/slider/slide5.png" alt="">
+              </div>
+              <span class="controls" id="left-arrow"><i aria-hidden="true">⬅ </i>
+            </span>
+              <span class="controls" id="right-arrow"><i aria-hidden="true"> ➡</i>
+            </span>
+            </div>
+          <div class="square" id="square4">
+             <p class="pealkirjake">Olmejäätmed</p>
+             <p class="tekstike">Segaolmejäätmete alla kuuluvad kõik jäätmed, mida eraldi liigitatuna ei koguta. Näitena võib tuua mähkmed, hügieenisidemed, tampoonid, määrdunud pakendid, kassiliiv, tänavapühkmed, tuhk, katkised mänguasjad, rõivad, jalanõud jne.</p>
          </div>
-         <div class="square" id="kast">
-            <a href="olmeprügi.html">
-             <img class="pilt1" src="Olmejäätmed.png">
-            </a>
+         <div class="square kast" id="olmekast">
+            <a href="html/olmeprügi.html"></a>
          </div>
-         <div class="square" id="kast">
-            <a href="Biojäätmed.html">
-              <img class="pilt1" src="Biojäätmed.png">
-            </a>
+         <div class="square kast" id="biokast">
+            <a href="html/Biojäätmed.html"></a>
             </div>
          <div class="square" id="square6">
-             <p id="pealkirjake">Biojäätmed</p>
-                <p id="tekstike">Ligi veerand inimese poolt tekitatud olmejäätmetest moodustab biojäätmed. Liigiti kogumine on oluline, sest prügilasse ladestatud biojäätmetest eraldub kasvuhoonegaasi, lisaks määrivad segaolmejäätmed teisi materjale ning biojäätmetes sisalduvad toitained on väärtuslik ressurss nii koduaias kui ka põllumajanduses.</p>
+             <p class="pealkirjake">Biojäätmed</p>
+                <p class="tekstike">Ligi veerand inimese poolt tekitatud olmejäätmetest moodustab biojäätmed. Liigiti kogumine on oluline, sest prügilasse ladestatud biojäätmetest eraldub kasvuhoonegaasi, lisaks määrivad segaolmejäätmed teisi materjale ning biojäätmetes sisalduvad toitained on väärtuslik ressurss nii koduaias kui ka põllumajanduses.</p>
          </div>
-          <div style="color: #00421A;" class="square" id="square5">
-             <p id="pealkirjake">Klaas</p>
-             <p id="tekstike">Klaas on ressurss, mida saab lõpmatult ümber töödelda, võimaldades 40-50 taaskasutustsüklit. Klaasi taaskasutamine, isegi pandimärgita, on keskkonnasäästu seisukohast oluline, kuna see on säästlikum kui uue toorme tootmine. Klaas sorteeritakse värvide järgi, sulatatakse klaasipuruks ja seejärel kasutatakse seda uute klaastoodete valmistamiseks.
+          <div class="square" id="square5">
+             <p class="pealkirjake">Klaas</p>
+             <p class="tekstike">Klaas on ressurss, mida saab lõpmatult ümber töödelda, võimaldades 40-50 taaskasutustsüklit. Klaasi taaskasutamine, isegi pandimärgita, on keskkonnasäästu seisukohast oluline, kuna see on säästlikum kui uue toorme tootmine. Klaas sorteeritakse värvide järgi, sulatatakse klaasipuruks ja seejärel kasutatakse seda uute klaastoodete valmistamiseks.
              </p>
          </div>
-          <div class="square" id="kast">
-            <a href="klaaspakend.html">
-              <img class="pilt1" src="Klaastaara.png">
-            </a>
+          <div class="square kast" id="klaaskast">
+            <a href="html/klaaspakend.html"></a>
          </div>
-          <div class="square" id="kast">
-            <a href="plastmetall.html">
-              <img class="pilt1" src="plastpakend.png">
-            </a>
+          <div class="square kast" id="plastkast">
+            <a href="html/plastmetall.html"></a>
           </div>
-          <div style="color: #554714;" class="square" id="square7">
-             <p id="pealkirjake">Plast- ja metallpakend</p>
-              <p id="tekstike">Plast- ja metallpakend on soovitatav koguda teistest pakendimaterjalidest eraldi. Sellisel juhul on võimalus rohkem pakendijäätmed ringlusse võtta.  Taaskasutatud plastist asjade tootmine kasutab ligikaudu 70% vähem ressursse ja energiat, kui uuest plastist tootmine. Näiteks ühe uue alumiiniumpurgi tootmine võrdub 20ne taaskasutatud materjalist purgi tootmisega.</p>
+          <div class="square" id="square7">
+             <p class="pealkirjake">Plast- ja metallpakend</p>
+              <p class="tekstike">Plast- ja metallpakend on soovitatav koguda teistest pakendimaterjalidest eraldi. Sellisel juhul on võimalus rohkem pakendijäätmed ringlusse võtta.  Taaskasutatud plastist asjade tootmine kasutab ligikaudu 70% vähem ressursse ja energiat, kui uuest plastist tootmine. Näiteks ühe uue alumiiniumpurgi tootmine võrdub 20ne taaskasutatud materjalist purgi tootmisega.</p>
 
           </div>
-          <div style="color: #00526B;" class="square" id="square8">
-             <p id="pealkirjake">Paber ja papp</p>
-             <p id="tekstike">Paber ja papp on biolagunevad materjalid, mis prügilasse jõudes tekitavad metaani, tugevamat kasvuhoonegaasi kui CO₂. Siiski võimaldab iga tonn ümbertöödeldud paberit säästa 17 puud, 3000-4000 kW elektrienergiat ja vähendada 95% paberi tootmisel tekkivat õhuheitet.</p>
+          <div class="square" id="square8">
+             <p class="pealkirjake">Paber ja papp</p>
+             <p class="tekstike">Paber ja papp on biolagunevad materjalid, mis prügilasse jõudes tekitavad metaani, tugevamat kasvuhoonegaasi kui CO₂. Siiski võimaldab iga tonn ümbertöödeldud paberit säästa 17 puud, 3000-4000 kW elektrienergiat ja vähendada 95% paberi tootmisel tekkivat õhuheitet.</p>
           </div>
-         <div class="square" id="kast">
-            <a href="papppaber.html">
-             <img class="pilt1" src="Vanapaber.png">
-            </a>
+         <div class="square kast" id="vanakast">
+            <a href="html/papppaber.html"></a>
          </div>
-         <div class="square" id="kast">
-            <a href="papppaber.html">
-             <img class="pilt1" src="Pakend.png">
-            </a>
+         <div class="square kast" id="pakendkast">
+            <a href="html/papppaber.html"></a>
          </div>
-         <div style="color: #00386B;" class="square" id="square9">
-             <p id="pealkirjake">Vanapaber</p>
-             <p id="tekstike">Paber ja kartong ehk vanapaber tuleb koguda teistest jäätmetest eraldi mahutisse. Kiletamata paberit võib kasutada ka tulehakatuseks, kuid paberi või kartongi ahjus või lõkkes hävitamine pole otstarbekas, kuna selle ringlusse võtmine aitab säästa metsi. Vanapaberit ei ole lubatud panna paber- ja kartongpakendi konteinerisse.</p>
+         <div class="square" id="square9">
+             <p class="pealkirjake">Vanapaber</p>
+             <p class="tekstike">Paber ja kartong ehk vanapaber tuleb koguda teistest jäätmetest eraldi mahutisse. Kiletamata paberit võib kasutada ka tulehakatuseks, kuid paberi või kartongi ahjus või lõkkes hävitamine pole otstarbekas, kuna selle ringlusse võtmine aitab säästa metsi. Vanapaberit ei ole lubatud panna paber- ja kartongpakendi konteinerisse.</p>
 
          </div>
     </div>
